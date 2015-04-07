@@ -35,8 +35,14 @@ namespace PersistentResourceView
 						currentInfomode = InfoManager.InfoMode.None;
 					}
 				}
+				if (Input.GetKeyUp(KeyCode.Escape)){
+					PersistentResourceViewLoader.toggleOn = false;
+					currentInfomode = InfoManager.InfoMode.None;
+					Singleton<InfoManager>.instance.SetCurrentMode(InfoManager.InfoMode.None, InfoManager.SubInfoMode.Default);
+				}
+
 			} 
-			
+
 		}
 	}
 

@@ -43,3 +43,4 @@ Temporary Items
 .apdisk
 *.dll
 PersistentResourceView/bin/Debug/PersistentResourceView.pdb
+PersistentResourceView.userprefs
